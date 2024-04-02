@@ -2,11 +2,6 @@
 
 .searchBar{
     z-index: 5;
-    // position:static;
-
-    @include sm{
-        display: none;
-    }
 
     .type{
         button{
@@ -51,7 +46,7 @@
             border: none;
             cursor: pointer;
             background-color: #fece51;
-            // width: 60px;
+            width: fit-content;
         }
     }
 }

@@ -43,7 +43,7 @@ const SearchBar = () => {
           placeholder='Max Price'
         />
         <button>
-          <img src="/search.png" alt="search" />
+          <img src="/search.png" alt="search" style={{width: "30px", padding: "10px"}}/>
         </button>
       </form>
     </div>
