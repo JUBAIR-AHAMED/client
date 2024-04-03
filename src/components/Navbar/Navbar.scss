@@ -82,7 +82,9 @@ nav{
         }
 
         .menu{
-            
+            a{
+                display: none;
+            }
             &.active{
                 @include sm{
                     top: 0;
