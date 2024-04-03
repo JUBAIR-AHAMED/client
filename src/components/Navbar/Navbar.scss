@@ -89,7 +89,7 @@ nav{
             flex-direction: column;
             background-color: black;
             color: white;
-            height: 100vh;
+            height: 0;
             width: 0;
             font-size:large;
             transition: all .6s ease;
@@ -102,6 +102,7 @@ nav{
             
             &.active{
                 @include sm{
+                    height: 100vh;
                     width: 50%;
                 }
             }
