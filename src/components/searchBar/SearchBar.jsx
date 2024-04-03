@@ -44,6 +44,7 @@ const SearchBar = () => {
         />
         <button>
           <img src="/search.png" alt="search"/>
+          <span>Search</span>
         </button>
       </form>
     </div>
