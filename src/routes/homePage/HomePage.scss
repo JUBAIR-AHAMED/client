@@ -3,7 +3,7 @@
 .homePage{
     display: flex;
     height: 100%;
-
+    width: 100%;
     .textContainer{
         flex: 3;
 
@@ -15,8 +15,15 @@
             gap: 50px;
             height: 100%;
 
+            @include sm{
+                padding-right: 0px;
+            }
             .title{
                 font-size: 50px;
+
+                @include sm{
+                    font-size: 35px;
+                }
             }
 
             .boxes{
@@ -25,6 +32,9 @@
 
                 h1{
                     font-size: 36px;
+                    @include sm{
+                        font-size: 29px;
+                    }
                 }
 
                 h2{

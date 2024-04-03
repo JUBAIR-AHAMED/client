@@ -1,6 +1,6 @@
 @import "../../responsive.scss";
 
-.searchBar{
+.searchBar{ 
     .type{
         button{
             padding: 16px 24px;
@@ -9,20 +9,35 @@
             cursor: pointer;
             background-color: white;
             text-transform: capitalize;
-
+            
             &.active{
                 background-color: black;
                 color: white;
             }
-
+            
             &:first-child{
                 border-top-left-radius: 5px;
                 border-right: none;
             }
-
+            
             &:last-child{
                 border-top-right-radius: 5px;
                 border-left: none;
+            }
+            
+            @include sm{
+                border-bottom: 1px solid #999;
+                margin-bottom: 1px;
+
+                &:first-child{
+                    border-bottom-left-radius: 5px;
+                    border-right: none;
+                }
+                
+                &:last-child{
+                    border-bottom-right-radius: 5px;
+                    border-left: none;
+                }
             }
         }   
     }
@@ -30,18 +45,25 @@
         border: 1px solid #999;
         display: flex;
         justify-content: space-between;
-        height: 64px;
-        position: inherit;
+        align-items: center ;
         gap: 5px;
+        padding-left: 13px;
 
         @include sm{
+            border: none;
             flex-direction: column;
+            width: 90%;
         }
 
         input{
-            border: none;
             padding: 0px 10px;
             width: 100%;
+            height: 5vh;
+            border: none;
+            
+            @include sm{
+                border: 1px solid #999;
+            }
         }
 
         button{
@@ -49,6 +71,14 @@
             cursor: pointer;
             background-color: #fece51;
             width: fit-content;
+            padding: 5px;
+            img{
+                width: "30px";
+                padding: "10px";
+            }
+            @include sm{
+                align-self: center;
+            }
         }
     }
 }

@@ -5,7 +5,6 @@ import SearchBar from '../../components/searchBar/SearchBar'
 const HomePage = () => {
   return (
     <div className='homePage'>
-      
       <div className="textContainer">
         <div className="wrapper">
           <h1 className='title'>Find Real Estate & Get Your Dream Place.</h1>
